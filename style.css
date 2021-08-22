@@ -1,0 +1,259 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4d2e06;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #dbc7bf;
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.kolom {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.kolom .deskripsi {
+    font-family: 'Comic sans ms';
+    font-weight: bold;
+    font-size: 20px;
+    color: #4d2e06;
+}
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #4d2e06;
+    line-height: 50px;
+    text-align: center;
+}
+a.tbl-biru {
+    background: #200364;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #e9deda;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: rgb(250, 110, 208);
+}
+
+.kolom .deskripsi {
+    font-family: 'Comic sans ms';
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+    color: black;
+}
+p {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #4d2e06;
+    line-height: 50px;
+}
+.tengah {
+    text-align: center;
+}
+.kontak {
+    top: 40px;
+    text-align: center;
+    width: 100%;
+}
+h5 {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.medsos-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-medsos {
+    width: 20%;
+    margin:  0 auto;
+}
+.kartu-medsos img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-medsos p {
+    background: #dbc7bf;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 13px 10px 13px;
+    cursor: pointer;
+    font-weight: 10px;
+
+}
+.kartu-medsos p:hover {
+    background: rgb(135, 215, 247);
+}
+#penutup {
+    background: #dbc7bf;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 800px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+.medsos-list img {
+    object-position: center;
+}
+.medsos-list p {
+    text-align: center;
+}
+#cr {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display:inline-block;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+    }
+    .kartu-medsos {
+        width: 50%;
+    }
+}
