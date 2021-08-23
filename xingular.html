@@ -17,11 +17,30 @@
                     <li><a href="#about us">About Us</a></li>
                     <li><a href="#structure">Structure</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href=""class="tbl-biru">Going Up</a></li>
+                    <li><span class="drktoggle" onclick="setDarkMode()" id="darkbtn">Mode</span></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <script>
+        if(localStorage.getItem('theme') == 'dark')
+            setDarkMode()
+            
+        function setDarkMode() {
+            let keterangan = ''
+            let isDark = document.body.classList.toggle('darkmode')
+
+            if(isDark) {
+                keterangan = 'Bravo 6 Going Light'
+                localStorage.setItem('theme', 'dark')
+            } else {
+                keterangan = 'Bravo 6 Going Dark'
+                localStorage.removeItem('theme')
+            }
+            document.getElementById('darkbtn').innerHTML = keterangan
+
+        }
+    </script>
     <div class="wrapper">
         <section id="home">
             <img src="logo_xingular.png"/>
@@ -39,7 +58,7 @@
         <section id="about us">
             <div class="tengah">
                 <div class="kolom">
-                    <p class="deskripsi"></p>
+                    <p class="deskripsi">
                     <h3>KNOW MORE ABOUT US</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores incidunt reprehenderit error doloribus architecto velit, repudiandae repellendus deleniti modi cum. Ullam libero velit maxime minus est. Soluta voluptates doloribus nostrum nobis ea! Ex atque eveniet, voluptates autem esse odio corrupti similique vel repellat ut dignissimos quis molestiae exercitationem assumenda illum?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non numquam quaerat at fuga quos, ad pariatur tempora voluptatem vitae odit quasi amet maxime reiciendis accusamus cum eveniet, adipisci quis. Fugiat totam perspiciatis commodi, eaque quo vitae aut? Modi natus cupiditate ad incidunt vel, dolor quibusdam vero nam ducimus quis excepturi optio asperiores unde magnam alias assumenda. Beatae quod perferendis dignissimos vitae, dolorum in rem modi eius ducimus at iste quae distinctio temporibus minima? Iure fugiat minima repellendus veniam neque incidunt aliquid dolores. Atque blanditiis sint quis, illum asperiores expedita hic ea excepturi facere et. Veritatis eaque non quam perspiciatis!</p>
@@ -49,13 +68,14 @@
     </div>
     <div class="wrapper">
         <section id="structure">
-            <div class="kolom">
-                <p class="deskripsi">STRUCTURE OF XINGULAR 1 </p>
-                <h4>Form Teacher : Mrs.Rosita, S.pd</h4>
-                <h4>Leader       : Arfabian Selby Havilah</h4>
-                <h4>CoLeader     : La Mora Rhama Dhino</h4>
-                <h4>Secretary    : Riris Surya Putri</h4>
-                <h4>Treasurer    : Sekar Nirmal Choirani</h4>
+            <div class="struktur">
+                <p class="deskripsi"></p>
+                <h3>STRUCTURE OF XINGULAR 1</h3>
+                <p>Form Teacher : Mrs.Rosita, S.pd</p>
+                <p>Leader       : Arfabian Selby Havilah</p>
+                <p>CoLeader     : La Mora Rhama Dhino</p>
+                <p>Secretary    : Riris Surya Putri</p>
+                <p>Treasurer    : Sekar Nirmal Choirani</p>
             </div>
             <img src="diagram kls 1.png">
         </section>
