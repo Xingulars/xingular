@@ -8,6 +8,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
+    background: #f8f0db;
 }
 
 .wrapper {
@@ -38,7 +39,7 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: #e8dfd0;
+    background: #dabd8b;
     z-index: 1;
     border-bottom: 1px solid black;
 }
@@ -283,7 +284,7 @@ h6 {
     padding: 50px 0px 50px 0px;
     margin-top: 50px;
 }
-@media screen and (max-width: 991.98px) {
+@media only screen and (max-width: 600px) {
     .wrapper {
         width: 90%;
     }
